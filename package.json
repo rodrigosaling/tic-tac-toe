@@ -1,0 +1,31 @@
+{
+  "name": "tic-tac-toe",
+  "version": "0.0.1",
+  "private": true,
+  "description": "An online multiplayer game of tic-tac-toe.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigosaling/tic-tac-toe"
+  },
+  "author": "Rodrigo Saling <rodrigosaling@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "tic-tac-toe",
+    "multiplayer"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "nuke": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist && npm cache clean --force && npm i"
+  },
+  "devDependencies": {
+    "@ikscodes/eslint-config": "~8.4.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

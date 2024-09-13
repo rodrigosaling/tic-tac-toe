@@ -1,0 +1,23 @@
+{
+  "name": "tic-tac-toe-server",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "The server side of tic-tac-toe",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/index.ts --clear-screen=false",
+    "build": "tsup ./src/index.ts --format esm",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "author": "Rodrigo Saling <rodrigosaling@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "tsx": "^4.10.5"
+  }
+}
