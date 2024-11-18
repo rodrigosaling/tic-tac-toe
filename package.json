@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "dev:web": "npm run dev --workspace web",
-    "dev:server": "cd packages/server && deno run --allow-net=localhost:5173 --watch main.ts",
+    "dev:server": "cd packages/server && deno run --allow-net --watch main.ts",
     "nuke": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist && npm cache clean --force && npm i"
   },
   "devDependencies": {
