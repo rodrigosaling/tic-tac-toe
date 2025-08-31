@@ -1,11 +1,11 @@
 {
-  "name": "bun-react-template",
+  "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --hot src/index.tsx",
-    "start": "NODE_ENV=production bun src/index.tsx",
+    "dev": "bun --hot src/server/index.tsx",
+    "start": "NODE_ENV=production bun src/server/index.tsx",
     "build": "bun run build.ts"
   },
   "dependencies": {
